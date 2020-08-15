@@ -684,16 +684,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .sign-container .button::after {
     display: inline-flex;
-    content: "";
     width: 24px;
     height: 24px;
     margin-left: 10px;
 
+    content: "";
     background-image: url(../images/icon-send.svg);
     background-position: center;
     background-size: contain;
-
-
 }
 
 /*Portfolio page styling*/
@@ -783,13 +781,6 @@ h1,h2,h3,h4,h5,h6 {
     border: 1px solid var(--cards-line);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 /*к каждому 3му ел-ту*/
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
@@ -837,13 +828,37 @@ calc((100% - (N of margin in row)*margin) / N of elements in row */
 }
 
 .portfolio-text {
-    width: 370px;
-    height: 294px;
-    margin-top: -294px;
+    margin: 0;
 
     color: var(--text-color-accent2);
-    background-color: var(--background-color-transparent2);
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
+}
+
+.image-thumb {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+   
+    width: 370px;
+    height: 294px;
+
+    padding: 63px 24px;
+    background-color: var(--background-color-transparent2);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
 }
