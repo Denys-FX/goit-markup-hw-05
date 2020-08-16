@@ -302,16 +302,16 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: auto;
 }
 
-.project-item {
-    display: flex;
-    flex-direction: column;
-    width: 370px;
-    height: 294px;
-}
-
 .projects-list {
     display: flex;
     justify-content: center;
+}
+
+.project-item {
+    display: inline-block;
+
+    width: 370px;
+    height: 294px;
 }
 
 .projects-list .project-item + .project-item {
@@ -319,14 +319,34 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .project-image {
-    display: inline-block;
-    width: 370px;
+    display: block;
 }
 
 .project-link {
-    width: 370px;
+    display: inline-block;
+    min-width: 370px;
     height: 70px;
+    padding: 27px 82px;
+
+    color: var(--text-color-accent2);
+    background-color:var(--background-color-transparent1);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
 }
+
+.project-thumb {
+    position: relative;
+}
+
+.overlink {
+    position: absolute;
+    bottom: 0;
+}
+
 
 /*Headers styling for "Our Ptojects","Our team", "Our Clients" */
 .section-title {
@@ -339,22 +359,6 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-}
-
-.project-link {
-    min-width: 370px;
-    height: 70px;
-    padding: 27px 82px;
-    margin-top: -70px;
-
-    color: var(--text-color-accent2);
-    background-color:var(--background-color-transparent1);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
 }
 
 /*Section "Team" styling*/
