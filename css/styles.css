@@ -554,16 +554,18 @@ h1,h2,h3,h4,h5,h6 {
 
 .footer-section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 /*Logo + Address block*/
 .section-address {
     display: flex;
     flex-direction: column;
+    
     width: 231px;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-left: 200px;
 }
 
 .section-address .link {
@@ -615,7 +617,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 206px;
     padding-top: 72px;
     padding-bottom: 100px;
-    margin-left: 69px;
+    margin-left: 70px;
 }
 
 .join-text, .signup-text {
@@ -639,63 +641,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 .social-link-footer:hover {
     background-color: var(--background-color-accent)
-}
-
-/*Sign-up block*/
-.section-signup {
-    max-width: 570px;
-    padding-top: 72px;
-    padding-bottom: 94px;
-    margin-left: 94px;
-}
-
-.sign-container {
-    display: flex;
-
-}
-.sign-container .button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 200px;
-    height: 50px;
-    margin-left: 12px;
-
-    border: 1px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    text-align: center;
-}
-
-.email-input {
-    display: flex;
-    align-items: center;
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--text-color-footer);
-    border: 1px solid var(--text-color-footer);
-    border-radius: 4px;
-}
-
-.sign-container .button::after {
-    display: inline-flex;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-
-    content: "";
-    background-image: url(../images/icon-send.svg);
-    background-position: center;
-    background-size: contain;
 }
 
 /*Portfolio page styling*/
