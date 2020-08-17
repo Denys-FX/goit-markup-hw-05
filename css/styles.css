@@ -552,20 +552,22 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: auto;
 }
 
-.footer-section {
+.section-footer {
     display: flex;
-    justify-content: flex-start;
-    
+
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /*Logo + Address block*/
+
 .section-address {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     
     width: 231px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: 200px;
 }
 
 .section-address .link {
@@ -611,9 +613,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Join block*/
+
+
 .section-join {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    
     width: 206px;
     padding-top: 72px;
     padding-bottom: 100px;
