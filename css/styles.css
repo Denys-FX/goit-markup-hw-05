@@ -148,12 +148,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .button-icon {
+    
     fill: var(--text-color-secondary);
     margin-right: 10px;
 }
 
-.button-icon:hover,
-.button-icon:focus {
+.site-contacts .item:hover .button-icon {
     fill: var(--text-color-accent);
 }
 
